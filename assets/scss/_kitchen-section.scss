@@ -1,0 +1,62 @@
+// -------------------------------------
+//   Kitchen
+// -------------------------------------
+// ----- Section Styles
+// -------------------------------------
+
+// KITCHEN SECTION
+.l-kitchen {
+	position: relative;
+	background: url("../img/kitchen-x.jpg")no-repeat center center;
+	@include bg-cover;
+	.l-kitchen-copy {
+		-webkit-transform: scale(0);
+		-moz-transform: scale(0);
+		-ms-transform: scale(0);
+		-o-transform: scale(0);
+		transform: scale(0);
+	    opacity: 0;
+	    padding-top: 2%;
+	}
+	.overlay img {
+		left: -115%;
+		-webkit-transform: rotate(-225deg);
+		-moz-transform: rotate(-225deg);
+		-ms-transform: rotate(-225deg);
+		-o-transform: rotate(-225deg);
+		transform: rotate(-225deg);
+	}
+
+	.callout-panel {
+		width: 600px;
+		height: 600px;
+		-webkit-border-radius: 50%; 
+		border-radius: 50%; 
+		p {
+			margin: 3% 24% ;
+			@include media(min-width 320px max-width 480px, 6) {
+				margin: 3% 5% 0 5%;
+			}
+		}
+		h2 {
+			padding: 0 16%;
+			@include media(min-width 320px max-width 480px, 6) {
+				padding: 0 11%;
+			}
+		}
+		.bottom-text {
+			color: #f47960;
+		}
+
+		left: 20%;
+		margin: 0 10% 10% 45%;
+		padding: 10% 1% 1% 1%;
+		background: rgba(247, 245, 244, 0.65);
+		@include media(min-width 320px max-width 780px, 6) {
+			margin: 0;
+		}
+		@include media(min-width 1300px, 6) {
+			margin-top: 25%; 
+		}
+	}
+}

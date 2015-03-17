@@ -1,0 +1,91 @@
+// -------------------------------------
+//   Settings
+// -------------------------------------
+// ----- @Font-Face Declarations, Variables
+// -------------------------------------
+
+// -------------------------------------
+//   @font-face
+// -------------------------------------
+
+// Add fonts to project as needed in the following format -
+// 'font-name': 'font-folder'
+
+// $fonts: (
+//   'font-name': 'font-folder',
+//   'font-name-two': 'font-folder-two'
+// );
+
+// @each $font-name, $font-folder in $fonts {
+//   @font-face {
+//     font-family: #{$font-name};
+//     src: url('path/to/fonts/#{$font-folder}/#{$font-name}.eot?#iefix') format('embedded-opentype'),
+//          url('path/to/fonts/#{$font-folder}/#{$font-name}.woff') format('woff'),
+//          url('path/to/fonts/#{$font-folder}/#{$font-name}.ttf') format('truetype'),
+//          url('path/to/fonts/#{$font-folder}/#{$font-name}.svg##{$font-name}') format('svg');
+//   }
+// }
+
+// -------------------------------------
+//   Variables
+// -------------------------------------
+
+// ----- Colors ----- //
+
+// COlORS
+
+$muteAqua: #1abc9c;
+$aqua: #16a085;
+$muteGreen: #2ecc71;
+$green: #27ae60;
+$muteBlue: #3498db;
+$blue: #2980b9;
+$mutePurple: #9b59b6;
+$purple: #8e44ad;
+$muteNavy: #34495e;
+$navy: #2c3e50;
+$yellow: #f1c40f;
+$orange: #f39c12;
+$carrot: #e67e22;
+$pumpkin: #d35400;
+$brightRed: #e74c3c;
+$deepRed: #c0392b;
+$clouds: #ecf0f1;
+$cream: #fafafa;
+$silver: #bdc3c7;
+$muteGrey: #95a5a6;
+$grey: #7f8c8d;
+$charcoal: #444444;
+
+// ----- Type ----- //
+
+// FLASHES
+
+.success {
+	@extend %flash-success;
+}
+
+.error {
+	@extend %flash-error;
+}
+
+.notice {
+	@extend %flash-notice;
+}
+
+.alert {
+	@extend %flash-alert;
+}
+
+// LISTS
+
+ol.default {
+	@extend %default-ol;
+}
+
+ul.default {
+	@extend %default-ul;
+}
+
+
+// ----- Grid ----- //
