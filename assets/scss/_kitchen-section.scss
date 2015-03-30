@@ -7,8 +7,9 @@
 // KITCHEN SECTION
 .l-kitchen {
 	position: relative;
-	background: url("../img/kitchen-x.jpg")no-repeat center center;
+	background: url("../img/kitchen-x.jpg")no-repeat fixed center center;
 	@include bg-cover;
+	background-position: 50% 0; 
 	.l-kitchen-copy {
 		-webkit-transform: scale(0);
 		-moz-transform: scale(0);
@@ -18,6 +19,7 @@
 	    opacity: 0;
 	    padding-top: 2%;
 	}
+	
 	.overlay img {
 		left: -115%;
 		-webkit-transform: rotate(-225deg);
@@ -31,7 +33,9 @@
 		width: 600px;
 		height: 600px;
 		-webkit-border-radius: 50%; 
-		border-radius: 50%; 
+		border-radius: 50%;
+		@include centerer;
+		left: 0;
 		p {
 			margin: 3% 24% ;
 			@include media(min-width 320px max-width 480px, 6) {
@@ -48,15 +52,15 @@
 			color: #f47960;
 		}
 
-		left: 20%;
-		margin: 0 10% 10% 45%;
+		left: 80%;
+		//margin: 0 10% 10% 45%;
 		padding: 10% 1% 1% 1%;
 		background: rgba(247, 245, 244, 0.65);
 		@include media(min-width 320px max-width 780px, 6) {
-			margin: 0;
+			left: 50%;
 		}
-		@include media(min-width 1300px, 6) {
-			margin-top: 25%; 
-		}
+		//@include media(min-width 1300px, 6) {
+		//	margin-top: 25%; 
+		//}
 	}
 }

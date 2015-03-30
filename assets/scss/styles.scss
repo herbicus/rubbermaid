@@ -40,7 +40,7 @@
 @import "bathroom-section";
 @import "kitchen-section";
 @import "couch-section";
-
+@import "modal";
 @import "content";
 
 // -------------------------------------
@@ -50,6 +50,14 @@
 // to quickly add styles that are easily seen by the maintainer of the file.
 // -------------------------------------
 
+.hero-text {
+	// @include media(min-width 320px max-width 780px, 6) {
+	// 	background-position: center 130px;
+	// }
+	// @include media(min-width 1300px, 6) {
+	// 	background-position: center center; 
+	// }
+}
 
 // -------------------------------------
 //   Shame

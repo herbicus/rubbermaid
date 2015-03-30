@@ -7,8 +7,9 @@
 // BATHROOM SECTION
 .l-bathroom {
 	position: relative;
-	background: url("../img/bathroom-x.jpg")no-repeat center center;
+	background: url("../img/bathroom-x.jpg")fixed no-repeat center center;
 	@include bg-cover;
+	background-position: 50% 0;
 	.l-bathroom-copy {
 		-webkit-transform: scale(0);
 		-moz-transform: scale(0);
@@ -24,7 +25,9 @@
 		width: 600px;
 		height: 600px;
 		-webkit-border-radius: 50%; 
-		border-radius: 50%; 
+		border-radius: 50%;
+		@include centerer;
+		left: 20%;
 		p {
 			margin: 3% 24% ;
 			@include media(min-width 320px max-width 480px, 6) {
@@ -42,15 +45,15 @@
 			color: #f47960;
 		}
 
-		margin: 0 10% 10% -10.5%;
+		//margin: 0 10% 10% -10.5%;
 		padding: 10% 1% 1% 1%;
 		background: rgba(247, 245, 244, 0.65);
-		@include media(min-width 320px max-width 780px, 6) {
-			margin: 0;
+		@include media(max-width 780px, 6) {
+			left: 50%;
 		}
-		@include media(min-width 1300px, 6) {
-			margin-top: 25%; 
-		}
+		// @include media(min-width 1300px, 6) {
+		// 	margin-top: 25%; 
+		// }
 	}
 
 }

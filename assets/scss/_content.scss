@@ -35,7 +35,7 @@ header {
 		// position: fixed;
 		// padding-top: 4em;
 		li {
-			font-family: 'gotham';			
+			font-family: 'lato-black';
 			display: inline-block;
 			padding: 0 1em;
 			font-size: 1em;
@@ -115,7 +115,7 @@ header {
 		text-align: center;
 		li {
 			padding: 0.25em 0;
-			font-family: 'gotham';
+			font-family: 'lato-black';
 			text-transform: uppercase; 
 			font-size: 1.25em;
 			@include fade-hover;
@@ -168,6 +168,7 @@ header {
 	// height: 100vh;
 	background: url("../img/hero-bg.png")fixed;
 	@include bg-cover;
+	background-position: 50% 0; 
 }
 
 .l-parallax-section {
@@ -192,6 +193,7 @@ header {
 		overflow: hidden;
 		.parallax-brush {
 			padding-top: 25vh;
+			position: relative;
 			@include media(min-width 1300px, 6) {
 				padding-top: 60vh;
 			}
@@ -210,6 +212,7 @@ header {
 			text-align: right;
 			padding-top: 75vh;
 			color: #f47960;
+			font-size: 1.15em;
 			//text-shadow: 0 2px 2px $charcoal;
 		}
 		@include media(min-width 320px max-width 780px, 6) {
@@ -222,16 +225,20 @@ header {
 .hero-text {
 	background: url(../img/hero-text.png);
 	@include bg-contain;
-	background-position: center top; 
+	background-position: center top;
+	background-position: 50% 0;  
 	height: 100vh;
-	@include media(min-width 320px max-width 780px, 6) {
-		background-position: center 130px; 
-	}
-	@include media(min-width 1300px, 6) {
-		background-position: center center; 
-	}
+	position: relative;
+	left: -20%;
+	opacity: 0;
+	// @include media(min-width 320px max-width 780px, 6) {
+	// 	background-position: center 130px;
+	// }
+	// @include media(min-width 1300px, 6) {
+	// 	background-position: center center; 
+	// }
 	.bottom-text {
-		@include media(min-width 320px max-width 780px, 6) {
+		@include media(min-width 320px max-width 780px, 6) { 
 			text-align: center !important;
 			padding: 100% 2% 0 2% !important;
 		}
@@ -319,7 +326,7 @@ footer {
 		li {
 			padding: 0 1em;
 			display: inline-block;
-			font-family: 'gotham';
+			font-family: 'lato-black';
 			@include fade-hover;
 			text-transform: uppercase;
 		}
@@ -353,48 +360,3 @@ footer {
 		height: auto; 
 	}
 }
-
-// GAME MARKUP
-// .l-game-section {
-// 	background: url("../img/kitchen-bg-1.jpg")no-repeat center center;
-// 	@include bg-cover; 
-// 	.dropzone {
-// 	    overflow: hidden;
-// 	    margin: .5em;
-// 	    padding: 1em;
-// 	    color: #666;
-// 	    text-align: center;
-// 	    background: #ccc;
-// 	    line-height: 4em;
-// 	    border: 4px dashed transparent;
-// 	    transition: background .15s linear, border-color .15s linear;
-// 	}
-
-// 	.dropzone.-drop-possible { border-color: #666; }
-
-// 	.dropzone.-drop-over {
-// 	    background: #666;
-// 	    color: #fff;
-// 	}
-
-// 	.draggable {
-// 	    position: relative;
-// 	    z-index: 10;
-// 	    width: 200px;
-// 	    margin: .25em;
-// 	    padding: 1em 2em;
-// 	    background-color: #29e;
-// 	    color: #fff;
-// 	    text-align: center;
-
-// 	    -ms-touch-action: none;
-// 	        touch-action: none;
-// 	}
-
-// 	.draggable.-drop-possible { background-color: #42bd41; }
-
-// }
-
-// .bx-wrapper .bx-controls-direction a {
-// 	top: 90% !important;
-// }
